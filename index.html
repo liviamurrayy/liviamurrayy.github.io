@@ -39,7 +39,7 @@
 
     <main class="main-content">
       <section class="card" id="about">
-        <h2>abouts</h2>
+        <h2>about</h2>
         <p>I am a fourth year <a href="https://uwaterloo.ca/future-students/programs/biomedical-engineering" target="_blank" rel="noopener noreferrer">Biomedical Engineering</a> 
           student at the University of Waterloo. I am interested in the intersection of artificial and natural intelligence, 
           particularly in decision making, neural plasticity, and learning frameworks.</p>
@@ -50,10 +50,9 @@
           the mouse brain.</p>
 
         <p>Beyond research, I'm a director of <a href="https://www.watolink.ca" target="_blank" rel="noopener noreferrer">WATOLINK</a>, 
-          the University of Waterloo's neurotechnology student design team, where we provide hands-on learning and 
+          the University of Waterloo's neurotechnology student design team. Our mission is to provide hands-on learning and 
           research opportunities for students developing brain-computer interfaces using EEG signal analysis and machine 
           learning.</p>
-
 
         <p><strong>Education:</strong><br>
         Bachelor of Applied Science in Biomedical Engineering, University of Waterloo — <em>Expected April 2026</em><br>
@@ -116,7 +115,6 @@
     const themeIcon = document.getElementById('theme-icon');
     const htmlElement = document.documentElement;
 
-    // Check for saved theme preference or default to light mode
     const currentTheme = localStorage.getItem('theme') || 'light';
     htmlElement.setAttribute('data-theme', currentTheme);
     updateIcon(currentTheme);
