@@ -1,148 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Livia Murray's Research Experience - AI, Neuroscience, and Biomedical Engineering">
   <title>Livia Murray — Research</title>
   <link rel="stylesheet" href="style.css">
-
-  <style>
-
-    /* Timeline styling */
-    .timeline {
-      position: relative;
-      margin: 40px 0;
-      padding-left: 200px;
-      list-style: none;
-      
-    }
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 180px;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: var(--accent);
-    }
-    .timeline-item {
-      position: relative;
-      margin-bottom: 40px;
-      padding: 20px;
-      border-radius: 10px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .timeline-item:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    outline: none;
-    }
-    .timeline-date {
-      position: absolute;
-      left: -250px;
-      width: 200px;
-      text-align: right;
-      color: var(--muted);
-      font-size: 14px;
-      top: 20px;
-    }
-    .timeline-content p {
-      margin: 2px 0;
-      font-size: 14px;
-      color: var(--muted);
-    }
-    .timeline-content .highlight {
-      text-indent: -0.8em;  /* pulls first line back */
-      padding-left: 0.8em;  /* indents the rest */
-      margin: 2px 0;
-      font-size: 14px;
-      color: var(--accent);
-    }
-
-  </style>
 </head>
 <body>
-    <header class="topbar">
+  <header class="topbar">
     <div class="topbar-container">
       <nav class="topnav">
         <a href="index.html">about</a>
         <a href="research.html" class="active">research</a>
       </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <img src="assets/icons/sun.png" alt="" class="theme-icon" id="theme-icon">
+      </button>
     </div>
   </header>
   
-  <aside class="sidebar">
-    <img src="assets/MUR_8104.jpg" alt="Livia Murray Profile">
-    <h1>Livia Murray</h1>
-    <div class="links">
-      <a href="mailto:livia.murray@uwaterloo.ca" class="icon-link" aria-label="Email">
-        <img src="assets/icons/email.png" alt="Email" class="icon">
-      </a>
-      <a href="https://linkedin.com/in/liviamurrayy" target="_blank" class="icon-link" aria-label="LinkedIn">
-        <img src="assets/icons/linkedin.png" alt="LinkedIn" class="icon">
-      </a>
-      <a href="https://github.com/liviamurrayy" target="_blank" class="icon-link" aria-label="GitHub">
-        <img src="assets/icons/github.png" alt="GitHub" class="icon">
-      </a>
-    </div>
-  </aside>
+  <div class="page-container">
+    <aside class="sidebar">
+      <img src="assets/MUR_8104.jpg" alt="Livia Murray Profile">
+      <h1>Livia Murray</h1>
+      <div class="links">
+        <a href="mailto:livia.murray@uwaterloo.ca" class="icon-link" aria-label="Email">
+          <img src="assets/icons/email.png" alt="" class="icon">
+        </a>
+        <a href="https://linkedin.com/in/liviamurrayy" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+          <img src="assets/icons/linkedin.png" alt="" class="icon">
+        </a>
+        <a href="https://github.com/liviamurrayy" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+          <img src="assets/icons/github.png" alt="" class="icon">
+        </a>
+      </div>
+    </aside>
 
-  <main>
-    <section class="card" id="research">
-      <!-- <h2>Research Experience</h2> -->
-      <ul class="timeline">
-        <li class="timeline-item">
-          <div class="timeline-date">Apr 2025 – Present</div>
-          <div class="timeline-content">
-            <h3>AI Research Assistant</h3>
-            <h4>Harvard University, Kempner Institute, Boston, MA</h4>
-            <p>Supervisors: Dr. Ella Batty, Dr. Bernardo Sabatini</p>
-            <p class="highlight">• Collaborating on the development of modular computational models of the mouse brain with the
-Research & Engineering Team, creating scalable and biologically informed simulations.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">Sept 2023 – Present</div>
-          <div class="timeline-content">
-            <h3>Research Assistant</h3>
-            <h4>Harvard Medical School, Boston, MA</h4>
-            <p>Supervisors: Dr. Allison Girasole, Dr. Bernardo Sabatini</p>
-            <p class="highlight">• Developing and maintaining data pipelines for brain microscopy, calcium imaging, and in-vivo electrophysiology to 
-              analyze striatal activity underlying motor decision-making using fiber photometry.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">May 2024 – Aug 2024</div>
-          <div class="timeline-content">
-            <h3>ML Research Co-op</h3>
-            <h4>National Research Council of Canada, Digital Technologies, Ottawa, ON</h4>
-            <p>Supervisor: Dr. Pengcheng Xi</p>
-            <p class="highlight">• Developed control methods for imitation learning data collection and reinforcement learning policies,
-aiding robot interaction using computer vision and diffusion planning in ur-rtde.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">Jan 2023 – May 2023</div>
-          <div class="timeline-content">
-            <h3>Technical Analyst</h3>
-            <h4>University of Waterloo, Waterloo, ON</h4>
-            <p>Supervisors: Dr. Benjamin Cornish, Dr. William McIlroy</p>
-            <p class="highlight">• Investigated the use of wearable technology to link neural control and human movement in hopes of
-enhancing clinical outcomes, developing pipelines for signal processings.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">Sept 2022 – May 2024</div>
-          <div class="timeline-content">
-            <h3>Research Assistant</h3>
-            <h4>University of Waterloo, Waterloo, ON</h4>
-            <p>Supervisors: Dr. Mohammad Shushtari, Dr. Arash Arami</p>
-            <p class="highlight">• Applied ML, signal processing, and system identification for techniques to integrate electromyography
-(EMG) and IMU sensors for adaptive human–robot interaction in support of PhD thesis project.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </main>
+    <main class="main-content">
+      <section class="card" id="research">
+        <h2>research experience</h2>
+        <ul class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-date">Apr 2025 – Present</div>
+            <div class="timeline-content">
+              <h3>AI Research Assistant</h3>
+              <h4>Harvard University, Kempner Institute, Boston, MA</h4>
+              <p>Supervisors: Dr. Ella Batty, Dr. Bernardo Sabatini</p>
+              <p class="highlight">• Collaborating on the development of modular computational models of the mouse brain with the Research & Engineering Team, creating scalable and biologically informed simulations.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">Sept 2023 – Present</div>
+            <div class="timeline-content">
+              <h3>Research Assistant</h3>
+              <h4>Harvard Medical School, Boston, MA</h4>
+              <p>Supervisors: Dr. Allison Girasole, Dr. Bernardo Sabatini</p>
+              <p class="highlight">• Developing and maintaining data pipelines for brain microscopy, calcium imaging, and in-vivo electrophysiology to analyze striatal activity underlying motor decision-making using fiber photometry.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">May 2024 – Aug 2024</div>
+            <div class="timeline-content">
+              <h3>ML Research Co-op</h3>
+              <h4>National Research Council of Canada, Digital Technologies, Ottawa, ON</h4>
+              <p>Supervisor: Dr. Pengcheng Xi</p>
+              <p class="highlight">• Developed control methods for imitation learning data collection and reinforcement learning policies, aiding robot interaction using computer vision and diffusion planning in ur-rtde.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">Jan 2023 – May 2023</div>
+            <div class="timeline-content">
+              <h3>Technical Analyst</h3>
+              <h4>University of Waterloo, Waterloo, ON</h4>
+              <p>Supervisors: Dr. Benjamin Cornish, Dr. William McIlroy</p>
+              <p class="highlight">• Investigated the use of wearable technology to link neural control and human movement in hopes of enhancing clinical outcomes, developing pipelines for signal processing.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-date">Sept 2022 – May 2024</div>
+            <div class="timeline-content">
+              <h3>Research Assistant</h3>
+              <h4>University of Waterloo, Waterloo, ON</h4>
+              <p>Supervisors: Dr. Mohammad Shushtari, Dr. Arash Arami</p>
+              <p class="highlight">• Applied ML, signal processing, and system identification techniques to integrate electromyography (EMG) and IMU sensors for adaptive human–robot interaction in support of PhD thesis project.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script>
+    // Dark mode toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const htmlElement = document.documentElement;
+
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', currentTheme);
+    updateIcon(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      htmlElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+      themeIcon.src = theme === 'light' ? 'assets/icons/sun.png' : 'assets/icons/moon.png';
+    }
+  </script>
 </body>
 </html>
